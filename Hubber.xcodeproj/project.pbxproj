@@ -16,6 +16,7 @@
 		E29C2C5F1DAE31BB007C4759 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C2C5E1DAE31BB007C4759 /* User.swift */; };
 		E29C2C611DAE3745007C4759 /* GithubApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C2C601DAE3745007C4759 /* GithubApiClientTests.swift */; };
 		E29C2C641DAE6F90007C4759 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C2C631DAE6F90007C4759 /* UserTests.swift */; };
+		E29C2C661DAE7FD0007C4759 /* UserSearchViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C2C651DAE7FD0007C4759 /* UserSearchViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E29C2C5E1DAE31BB007C4759 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E29C2C601DAE3745007C4759 /* GithubApiClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubApiClientTests.swift; sourceTree = "<group>"; };
 		E29C2C631DAE6F90007C4759 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
+		E29C2C651DAE7FD0007C4759 /* UserSearchViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				E29C2C451DAE272B007C4759 /* Info.plist */,
 				E29C2C601DAE3745007C4759 /* GithubApiClientTests.swift */,
 				E29C2C631DAE6F90007C4759 /* UserTests.swift */,
+				E29C2C651DAE7FD0007C4759 /* UserSearchViewControllerTests.swift */,
 			);
 			path = hubberTests;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E29C2C641DAE6F90007C4759 /* UserTests.swift in Sources */,
+				E29C2C661DAE7FD0007C4759 /* UserSearchViewControllerTests.swift in Sources */,
 				E29C2C611DAE3745007C4759 /* GithubApiClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

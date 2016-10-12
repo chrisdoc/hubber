@@ -25,6 +25,8 @@ class UserSearchViewController: UIViewController {
     
     lazy var apiClient: GitHubApi = GitHubApiClient()
     
+    var users: [User] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
      
@@ -71,8 +73,13 @@ extension UserSearchViewController: UISearchBarDelegate {
             print("nil searchterm \(searchBar.text)")
             return
         }
-        
-//       _ = apiClient.loadUsers(searchTerm)
+        apiClient.loadUsers(searchTerm) { [unowned self] (users, error) in
+            if let unwrappedUsers = users {
+                self.users = unwrappedUsers
+            } else {
+                print(error)
+            }
+        }
     }
 }
 
