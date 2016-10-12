@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E29C2C2F1DAE272B007C4759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C2C2E1DAE272B007C4759 /* AppDelegate.swift */; };
-		E29C2C311DAE272B007C4759 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C2C301DAE272B007C4759 /* ViewController.swift */; };
+		E29C2C311DAE272B007C4759 /* UserSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C2C301DAE272B007C4759 /* UserSearchViewController.swift */; };
 		E29C2C341DAE272B007C4759 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29C2C321DAE272B007C4759 /* Main.storyboard */; };
 		E29C2C361DAE272B007C4759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29C2C351DAE272B007C4759 /* Assets.xcassets */; };
 		E29C2C391DAE272B007C4759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29C2C371DAE272B007C4759 /* LaunchScreen.storyboard */; };
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		E29C2C2B1DAE272B007C4759 /* Hubber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hubber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29C2C2E1DAE272B007C4759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E29C2C301DAE272B007C4759 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E29C2C301DAE272B007C4759 /* UserSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchViewController.swift; sourceTree = "<group>"; };
 		E29C2C331DAE272B007C4759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E29C2C351DAE272B007C4759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E29C2C381DAE272B007C4759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				E29C2C2E1DAE272B007C4759 /* AppDelegate.swift */,
-				E29C2C301DAE272B007C4759 /* ViewController.swift */,
+				E29C2C301DAE272B007C4759 /* UserSearchViewController.swift */,
 				E29C2C321DAE272B007C4759 /* Main.storyboard */,
 				E29C2C351DAE272B007C4759 /* Assets.xcassets */,
 				E29C2C371DAE272B007C4759 /* LaunchScreen.storyboard */,
@@ -270,7 +270,7 @@
 			files = (
 				E29C2C5F1DAE31BB007C4759 /* User.swift in Sources */,
 				E29C2C5D1DAE3180007C4759 /* GithubApiClient.swift in Sources */,
-				E29C2C311DAE272B007C4759 /* ViewController.swift in Sources */,
+				E29C2C311DAE272B007C4759 /* UserSearchViewController.swift in Sources */,
 				E29C2C2F1DAE272B007C4759 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +524,7 @@
 				E29C2C551DAE272B007C4759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E29C2C561DAE272B007C4759 /* Build configuration list for PBXNativeTarget "HubberTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +533,7 @@
 				E29C2C581DAE272B007C4759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E29C2C591DAE272B007C4759 /* Build configuration list for PBXNativeTarget "HubberUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +542,7 @@
 				E29C2C5B1DAE272B007C4759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

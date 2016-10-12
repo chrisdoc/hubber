@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class UserSearchViewController: UIViewController {
     
     lazy var stackView: UIStackView = {
         let view = UIStackView()
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController {
+extension UserSearchViewController {
     fileprivate func searchBarLayoutConstraints() -> [NSLayoutConstraint] {
         let horizontalLeftConstrain = NSLayoutConstraint(item: searchBar, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1.0, constant: 0)
         let horizontalRightConstrain = NSLayoutConstraint(item: searchBar, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1.0, constant: 0)
@@ -65,7 +65,7 @@ extension ViewController {
 }
 
 // MARK: - UISearchBarDelegate
-extension ViewController: UISearchBarDelegate {
+extension UserSearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchTerm = searchBar.text else {
             print("nil searchterm \(searchBar.text)")
