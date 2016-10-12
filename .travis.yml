@@ -1,0 +1,8 @@
+language: objective-c
+osx_image: xcode8
+before_script:
+  - instruments -s devices
+  - xcodebuild -version
+  - xcodebuild -showsdks
+script:
+  - xcodebuild -project Hubber.xcodeproj -scheme hubber -sdk iphonesimulator  -destination 'platform=iOS Simulator,name=iPhone 7' build test | xcpretty
