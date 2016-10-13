@@ -30,6 +30,10 @@ class UserSearchViewControllerTests: XCTestCase {
 extension UserSearchViewControllerTests {
     class MockGithubApiClient: GitHubApi {
         var searchTerm: String?
+        func searchRepositories(_ searchTerm: String, completion: @escaping ([Repository]?, Error?) -> ()) {
+            self.searchTerm = searchTerm
+            completion([Repository(id: 112431, name: "hubber", fullName: "chrisdoc/hubber", starCount: 3, description: "A Github client")], nil)
+        }
         func searchUsers(_ searchTerm: String, completion: @escaping ([User]?, Error?) -> ()) {
             self.searchTerm = searchTerm
             completion([User(username: "chrisdoc", avatar: "http://i.pravatar.cc/300")], nil)

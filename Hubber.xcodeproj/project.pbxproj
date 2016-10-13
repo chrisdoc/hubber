@@ -17,6 +17,7 @@
 		E29C2C611DAE3745007C4759 /* GithubApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C2C601DAE3745007C4759 /* GithubApiClientTests.swift */; };
 		E29C2C641DAE6F90007C4759 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C2C631DAE6F90007C4759 /* UserTests.swift */; };
 		E29C2C661DAE7FD0007C4759 /* UserSearchViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C2C651DAE7FD0007C4759 /* UserSearchViewControllerTests.swift */; };
+		E29C2C6A1DAF898E007C4759 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C2C691DAF898E007C4759 /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E29C2C601DAE3745007C4759 /* GithubApiClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubApiClientTests.swift; sourceTree = "<group>"; };
 		E29C2C631DAE6F90007C4759 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		E29C2C651DAE7FD0007C4759 /* UserSearchViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchViewControllerTests.swift; sourceTree = "<group>"; };
+		E29C2C691DAF898E007C4759 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				E29C2C3A1DAE272B007C4759 /* Info.plist */,
 				E29C2C5C1DAE3180007C4759 /* GithubApiClient.swift */,
 				E29C2C5E1DAE31BB007C4759 /* User.swift */,
+				E29C2C691DAF898E007C4759 /* Repository.swift */,
 			);
 			path = hubber;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				E29C2C5F1DAE31BB007C4759 /* User.swift in Sources */,
 				E29C2C5D1DAE3180007C4759 /* GithubApiClient.swift in Sources */,
+				E29C2C6A1DAF898E007C4759 /* Repository.swift in Sources */,
 				E29C2C311DAE272B007C4759 /* UserSearchViewController.swift in Sources */,
 				E29C2C2F1DAE272B007C4759 /* AppDelegate.swift in Sources */,
 			);

@@ -27,4 +27,24 @@ class GithubApiClientTests: XCTestCase {
             }
         }
     }
+    
+    func testSearchingRepositoriesWithName_hubber() {
+        let userExp = expectation(description: "User completion")
+        sut.searchRepositories("react") {
+            (repositories, error) in
+            if let repos = repositories {
+                XCTAssertGreaterThanOrEqual(repos.count, 27)
+                XCTAssertEqual(repos[25].name, "react-tutorial")
+            } else {
+                XCTFail("No users have been returned")
+            }
+            userExp.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5) { error in
+            if let error = error {
+                XCTFail("Error: \(error.localizedDescription)")
+            }
+        }
+    }
 }
