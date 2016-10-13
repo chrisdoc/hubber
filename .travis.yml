@@ -1,13 +1,13 @@
 language: objective-c
 osx_image: xcode8
 before_install:
-  - gem install fastlane
-  - ls -la
+  - gem install fastlane slather
 before_script:
   - instruments -s devices
   - xcodebuild -version
   - xcodebuild -showsdks
 script:
-  - fastlane scan
+  - fastlane scan --code_coverage
+  - slather coverage -s --scheme hubber Hubber.xcodeproj
 after_success:
   - bash <(curl -s https://codecov.io/bash)
