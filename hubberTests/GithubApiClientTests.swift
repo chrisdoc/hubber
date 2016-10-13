@@ -8,9 +8,9 @@ class GithubApiClientTests: XCTestCase {
         sut = GitHubApiClient()
     }
     
-    func testLoadingUsersWithName_chrisdoc() {
+    func testSearchingUsersWithName_chrisdoc() {
         let userExp = expectation(description: "User completion")
-        sut.loadUsers("chrisdoc") {
+        sut.searchUsers("chrisdoc") {
             (users, error) in
             if let unwrappedUsers = users {
                 XCTAssertEqual(unwrappedUsers.count, 6)

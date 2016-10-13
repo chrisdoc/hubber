@@ -23,15 +23,16 @@ class UserSearchViewControllerTests: XCTestCase {
         let searchTerm = "chrisdoc"
         searchBar.text = searchTerm
         sut.searchBarSearchButtonClicked(searchBar)
-        XCTAssertEqual(apiClient.userName, searchTerm)
+        XCTAssertEqual(apiClient.searchTerm, searchTerm)
     }
 }
 
 extension UserSearchViewControllerTests {
     class MockGithubApiClient: GitHubApi {
-        var userName: String?
-        func loadUsers(_ userName: String, completion: @escaping ([User]?, Error?) -> ()) {
-            self.userName = userName
+        var searchTerm: String?
+        func searchUsers(_ searchTerm: String, completion: @escaping ([User]?, Error?) -> ()) {
+            self.searchTerm = searchTerm
+            completion([User(username: "chrisdoc", avatar: "http://i.pravatar.cc/300")], nil)
         }
     }
 }

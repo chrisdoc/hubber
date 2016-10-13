@@ -109,7 +109,7 @@ extension UserSearchViewController: UISearchBarDelegate {
             print("nil searchterm \(searchBar.text)")
             return
         }
-        apiClient.loadUsers(searchTerm) { [unowned self] (users, error) in
+        apiClient.searchUsers(searchTerm) { [unowned self] (users, error) in
             if let unwrappedUsers = users {
                 self.users = unwrappedUsers
             } else {

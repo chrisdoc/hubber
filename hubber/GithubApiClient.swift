@@ -1,7 +1,7 @@
 import Foundation
 
 protocol GitHubApi {
-    func loadUsers(_ userName: String, completion: @escaping ([User]?, Error?) -> ())
+    func searchUsers(_ searchTerm: String, completion: @escaping ([User]?, Error?) -> ())
 }
 
 struct GitHubApiClient : GitHubApi {
