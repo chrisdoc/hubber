@@ -32,6 +32,8 @@ class RepositorySearchViewController: UITableViewController {
         tableView.tableHeaderView = searchBar
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.estimatedRowHeight = 85.0
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
 }
 
@@ -61,9 +63,13 @@ extension RepositorySearchViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "blah")
-        cell.textLabel?.text = repositories[indexPath.row].fullName
-        return cell
+        let repositoryCell = tableView.dequeueReusableCell(withIdentifier: RepositoryCell.reuseIdentifier) as? RepositoryCell
+        guard let repoCell = repositoryCell else {
+            fatalError("no repo cell found")
+            return UITableViewCell(style: .default, reuseIdentifier: "blah")
+        }
+        repoCell.bind(repositories[indexPath.row])
+        return repoCell
     }
 }
 
